@@ -1,0 +1,224 @@
+.site-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header-logo a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.auth__user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+ 
+ 
+  
+}
+
+.auth__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid #ddd;
+}
+
+.auth__info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth__name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.auth__logout {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #e53935;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.auth__logout:hover {
+  background: #c62828;
+}
+.header-auth .login-block{
+    display: block;
+}
+
+
+.header-auth.auth .login-block{
+    display: none;
+}
+
+
+.header-auth .auth{
+    display: none;
+}
+
+
+.header-auth.auth .auth{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.header-nav {
+    height: 100%;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    gap: 5px;
+}
+
+.nav-item {
+    height: 100%;
+}
+
+.nav-link, .link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #65676b;
+    font-weight: 500;
+    font-size: 15px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+    
+}
+
+/* Эффекты при наведении и активный пункт */
+.nav-link:hover {
+    color: #007bff;
+    background-color: #f8f9fa;
+}
+
+.nav-link.active {
+    color: #007bff;
+    border-bottom-color: #007bff;
+}
+
+.nav-link i {
+    font-size: 18px;
+}
+
+/* Кнопки авторизации */
+.header-auth {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-login {
+    color: #007bff;
+    background-color: transparent;
+    border: 1px solid #007bff;
+    margin: 10px;
+}
+
+.btn-login:hover {
+    background-color: #f0f7ff;
+}
+
+.btn-register {
+    color: #ffffff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.btn-register:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        height: auto;
+        padding: 10px 15px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .header-nav {
+        width: 100%;
+    }
+
+    .nav-list {
+        justify-content: space-around;
+    }
+
+    .nav-link {
+        padding: 8px 10px;
+        border-bottom: none;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 12px;
+    }
+    
+    .nav-link i {
+        font-size: 16px;
+    }
+
+    .header-auth {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .btn {
+        flex: 1;
+        text-align: center;
+    }
+}

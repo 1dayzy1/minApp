@@ -1,0 +1,167 @@
+
+
+.auth-wrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    min-height: calc(100vh - 65px); 
+    padding: 40px 20px;
+    margin-top: 65px; 
+    
+    
+}
+
+.auth-wrapper.active{
+    display: flex;
+}
+
+.shadow{
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.6;
+    inset: 0;
+    z-index: 200;
+}
+
+.auth-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    position: relative;
+    z-index: 300;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-header h2 {
+    color: #1c1e21;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.auth-header p {
+    color: #65676b;
+    font-size: 14px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1c1e21;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 14px;
+    color: #bcc0c4;
+    font-size: 16px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 14px 12px 42px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #1c1e21;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.input-wrapper input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+
+.form-group input[type="file"] {
+    display: none;
+}
+
+
+.file-upload-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px;
+    background-color: #f8f9fa;
+    border: 2px dashed #ced4da;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    color: #65676b;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.file-upload-label:hover {
+    background-color: #f0f7ff;
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.file-icon {
+    font-size: 18px;
+}
+
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #65676b;
+}
+
+.auth-footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
